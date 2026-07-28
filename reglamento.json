@@ -6,40 +6,49 @@
   "reglasGenerales": [
     {
       "titulo": "Comienzo de partida",
-      "texto": "21:30 horas, o en el horario que se acuerde entre los jugadores para esa fecha."
+      "texto": "21:30 horas, o en el horario que se acuerde entre los jugadores para esa fecha.",
+      "resaltar": ["21:30 horas"]
     },
     {
       "titulo": "Fold automático",
       "texto": "Mientras la mano está en curso, todo jugador que no se encuentre sentado en la mesa cuando le llegue su turno de acción queda automáticamente FOLD. Sin excepciones.",
-      "destacar": "FOLD"
+      "destacar": "FOLD",
+      "resaltar": ["no se encuentre sentado", "Sin excepciones"]
     },
     {
       "titulo": "Luces a jugadores ausentes",
-      "texto": "Si la partida ya comenzó y un jugador todavía no llegó al lugar de juego, antes de la luz 6/12 solo se le descuentan fichas en su turno de ciega. A partir de la luz 6/12 se le descuentan ciegas y ante en todas las manos sin excepción."
+      "texto": "Si la partida ya comenzó y un jugador todavía no llegó al lugar de juego, antes de la luz 6/12 solo se le descuentan fichas en su turno de ciega. A partir de la luz 6/12 se le descuentan ciegas y ante en todas las manos sin excepción.",
+      "resaltar": ["antes de la luz 6/12", "A partir de la luz 6/12", "en todas las manos sin excepción"]
     },
     {
       "titulo": "Ante",
-      "texto": "A partir de la luz 6/12, el jugador que ocupa la posición de ciega grande debe poner, además de su ciega, un ante equivalente al valor de la ciega chica. Ejemplo: en la luz 6/12, la ciega grande aporta 12 (ciega) + 6 (ante) = 18 fichas en total. El ante se mantiene hasta que se conforma la mesa final."
+      "texto": "A partir de la luz 6/12, el jugador que ocupa la posición de ciega grande debe poner, además de su ciega, un ante equivalente al valor de la ciega chica. Ejemplo: en la luz 6/12, la ciega grande aporta 12 (ciega) + 6 (ante) = 18 fichas en total. El ante se mantiene hasta que se conforma la mesa final.",
+      "resaltar": ["ante equivalente al valor de la ciega chica", "12 (ciega) + 6 (ante) = 18 fichas", "mesa final"]
     },
     {
       "titulo": "Puntos",
-      "texto": "Solo suman puntos para el campeonato las partidas disputadas los días lunes. La cantidad máxima de puntos disponibles cada noche la determina la cantidad de jugadores presentes en esa fecha."
+      "texto": "Solo suman puntos para el campeonato las partidas disputadas los días lunes. La cantidad máxima de puntos disponibles cada noche la determina la cantidad de jugadores presentes en esa fecha.",
+      "resaltar": ["los días lunes", "jugadores presentes"]
     },
     {
       "titulo": "Sin Add On",
-      "texto": "No existe recompra de fichas bajo ninguna circunstancia. Una vez eliminado, el jugador queda fuera de la partida."
+      "texto": "No existe recompra de fichas bajo ninguna circunstancia. Una vez eliminado, el jugador queda fuera de la partida.",
+      "resaltar": ["No existe recompra", "ninguna circunstancia", "fuera de la partida"]
     },
     {
       "titulo": "Definición de puestos",
-      "texto": "Siempre se debe determinar el orden de eliminación de cada jugador y un ganador final. Si los últimos dos jugadores quedan mano a mano, pueden resolver el primer puesto jugando al mejor de 3 manos."
+      "texto": "Siempre se debe determinar el orden de eliminación de cada jugador y un ganador final. Si los últimos dos jugadores quedan mano a mano, pueden resolver el primer puesto jugando al mejor de 3 manos.",
+      "resaltar": ["orden de eliminación", "mejor de 3 manos"]
     },
     {
       "titulo": "Ausencias",
-      "texto": "El jugador inscripto que no se presente a una fecha suma únicamente 1 punto por esa noche."
+      "texto": "El jugador inscripto que no se presente a una fecha suma únicamente 1 punto por esa noche.",
+      "resaltar": ["1 punto"]
     },
     {
       "titulo": "Mínimo para jugar",
-      "texto": "Se necesitan al menos 6 jugadores anotados para que la partida se lleve a cabo y los puntos sean válidos."
+      "texto": "Se necesitan al menos 6 jugadores anotados para que la partida se lleve a cabo y los puntos sean válidos.",
+      "resaltar": ["6 jugadores"]
     }
   ],
 
@@ -49,7 +58,8 @@
       "En caso de no poder asistir a una fecha, el jugador debe abonar el monto correspondiente a esa partida realizando una transferencia al alias asociado al torneo, sin esperar a que se lo pidan.",
       "Ser responsable con el pago es fundamental: el cobrador dedica su tiempo a organizar y no debería tener que perseguir a nadie. La puntualidad en el pago es una forma de respeto hacia quien se encarga de la logística y hacia todos los compañeros del torneo.",
       "A quienes asistan en persona, se recomienda llevar el dinero en efectivo para facilitar las cuentas y agilizar el cierre de cada noche."
-    ]
+    ],
+    "resaltar": ["sin esperar a que se lo pidan", "no debería tener que perseguir a nadie", "dinero en efectivo"]
   },
 
   "inscripcion": {
@@ -57,15 +67,18 @@
     "reglas": [
       {
         "titulo": "Compromiso de pago",
-        "texto": "Al inscribirse, cada jugador se compromete a abonar las 17 fechas completas del torneo, independientemente de si asiste o no a cada una."
+        "texto": "Al inscribirse, cada jugador se compromete a abonar las 17 fechas completas del torneo, independientemente de si asiste o no a cada una.",
+        "resaltar": ["17 fechas completas", "independientemente de si asiste o no"]
       },
       {
         "titulo": "Pozo fijo",
-        "texto": "Gracias a este sistema, todos los lunes el pozo a repartir es exactamente el mismo, sin importar cuántos jugadores estén presentes físicamente."
+        "texto": "Gracias a este sistema, todos los lunes el pozo a repartir es exactamente el mismo, sin importar cuántos jugadores estén presentes físicamente.",
+        "resaltar": ["exactamente el mismo"]
       },
       {
         "titulo": "Puntos fijos",
-        "texto": "La cantidad de puntos en juego cada lunes equivale siempre al número total de jugadores inscriptos en el torneo."
+        "texto": "La cantidad de puntos en juego cada lunes equivale siempre al número total de jugadores inscriptos en el torneo.",
+        "resaltar": ["número total de jugadores inscriptos"]
       }
     ]
   },
@@ -73,22 +86,25 @@
   "premiosPorFecha": {
     "descripcion": "Cada lunes, del pozo destinado a los ganadores de la noche ($8.500 por jugador), se reparte entre los tres primeros puestos:",
     "puestos": [
-      { "puesto": "1°", "texto": "Ganador de la fecha: se lleva el 70% del pozo de la noche." },
-      { "puesto": "2°", "texto": "Segundo puesto: se lleva el 30% del pozo de la noche." },
-      { "puesto": "3°", "texto": "Tercer puesto: recibe un premio fijo de $12.000 (recupera su entrada)." }
+      { "puesto": "1°", "texto": "Ganador de la fecha: se lleva el 70% del pozo de la noche.", "resaltar": ["70%"] },
+      { "puesto": "2°", "texto": "Segundo puesto: se lleva el 30% del pozo de la noche.", "resaltar": ["30%"] },
+      { "puesto": "3°", "texto": "Tercer puesto: recibe un premio fijo de $12.000 (recupera su entrada).", "resaltar": ["$12.000"] }
     ],
     "castigos": [
       {
         "titulo": "Primer eliminado de la noche",
-        "texto": "El jugador que quede eliminado primero deberá encargarse de lavar todo lo relacionado a la comida y bebida de esa fecha (platos, vasos, cubiertos, etc.)."
+        "texto": "El jugador que quede eliminado primero deberá encargarse de lavar todo lo relacionado a la comida y bebida de esa fecha (platos, vasos, cubiertos, etc.).",
+        "resaltar": ["eliminado primero", "lavar todo"]
       },
       {
         "titulo": "Segundo eliminado",
-        "texto": "Será el ayudante del lavador. Se encarga de colaborar con la limpieza y dejar todo medianamente acomodado."
+        "texto": "Será el ayudante del lavador. Se encarga de colaborar con la limpieza y dejar todo medianamente acomodado.",
+        "resaltar": ["ayudante del lavador"]
       },
       {
         "titulo": "Mesa final (1°, 2° y 3°)",
-        "texto": "Los tres jugadores que lleguen a la instancia final deberán colaborar en acomodar la sede al terminar la partida (mesa, sillas, fichas, etc.), para no dejarle el trabajo al organizador."
+        "texto": "Los tres jugadores que lleguen a la instancia final deberán colaborar en acomodar la sede al terminar la partida (mesa, sillas, fichas, etc.), para no dejarle el trabajo al organizador.",
+        "resaltar": ["acomodar la sede", "no dejarle el trabajo al organizador"]
       }
     ]
   },
@@ -105,6 +121,7 @@
       { "puesto": "3°", "porcentaje": 20 }
     ],
     "masMamon": "Se otorga al jugador que más veces haya terminado en primer puesto durante las partidas regulares de los lunes dentro del torneo. En caso de empate, se desempata comparando el promedio general de puntos.",
+    "masMamonResaltar": ["primer puesto", "promedio general de puntos"],
     "desempate": [
       "Mayor cantidad de primeros puestos obtenidos los lunes.",
       "Mejor promedio general de puntos en el torneo.",
@@ -122,9 +139,9 @@
     "comodin": {
       "descripcion": "Cada jugador dispone de una herramienta estratégica para potenciar una fecha clave:",
       "reglas": [
-        { "titulo": "Uno por torneo", "texto": "Cada jugador cuenta con 1 comodín por campeonato (no es acumulable entre torneos)." },
-        { "titulo": "Efecto", "texto": "Al activarlo, los puntos obtenidos esa noche se duplican." },
-        { "titulo": "Condición", "texto": "Debe anunciarse públicamente antes de que se reparta la primera mano de esa partida. Una vez comenzado el juego, no se puede activar." }
+        { "titulo": "Uno por torneo", "texto": "Cada jugador cuenta con 1 comodín por campeonato (no es acumulable entre torneos).", "resaltar": ["1 comodín", "no es acumulable"] },
+        { "titulo": "Efecto", "texto": "Al activarlo, los puntos obtenidos esa noche se duplican.", "resaltar": ["se duplican"] },
+        { "titulo": "Condición", "texto": "Debe anunciarse públicamente antes de que se reparta la primera mano de esa partida. Una vez comenzado el juego, no se puede activar.", "resaltar": ["antes de que se reparta la primera mano", "no se puede activar"] }
       ]
     }
   },
@@ -132,17 +149,17 @@
   "master": {
     "descripcion": "La gran final del año reúne a los 10 mejores jugadores de la temporada. Los cupos se asignan de la siguiente manera:",
     "cupos": [
-      { "cantidad": 2, "texto": "Los dos campeones (ganadores del 1° y 2° torneo semestral) clasifican directamente." },
-      { "cantidad": 7, "texto": "Los 7 mejores ubicados en la tabla general acumulada de ambos torneos (excluyendo a los dos campeones ya clasificados)." },
-      { "cantidad": 1, "texto": "El décimo lugar se define en una partida especial el Lunes 30/11/2026. Los jugadores que puedan asistir se juntan esa noche: el 50% de lo recaudado se destina al pozo del Master y el otro 50% se reparte entre los participantes de esa mesa." }
+      { "cantidad": 2, "texto": "Los dos campeones (ganadores del 1° y 2° torneo semestral) clasifican directamente.", "resaltar": ["clasifican directamente"] },
+      { "cantidad": 7, "texto": "Los 7 mejores ubicados en la tabla general acumulada de ambos torneos (excluyendo a los dos campeones ya clasificados).", "resaltar": ["7 mejores", "tabla general acumulada"] },
+      { "cantidad": 1, "texto": "El décimo lugar se define en una partida especial el Lunes 30/11/2026. Los jugadores que puedan asistir se juntan esa noche: el 50% de lo recaudado se destina al pozo del Master y el otro 50% se reparte entre los participantes de esa mesa.", "resaltar": ["Lunes 30/11/2026", "50%"] }
     ]
   },
 
   "ciegas": {
     "reglas": [
-      { "titulo": "Duración de cada nivel", "texto": "13 minutos. Al cumplirse el tiempo, las ciegas suben al siguiente nivel automáticamente." },
-      { "titulo": "Inicio", "texto": "Las ciegas arrancan en 2/4 y aumentan de forma progresiva sin límite." },
-      { "titulo": "Ante", "texto": "Se activa a partir del nivel 4 (ciegas 6/12). El valor del ante es siempre igual a la ciega chica del nivel en curso." }
+      { "titulo": "Duración de cada nivel", "texto": "13 minutos. Al cumplirse el tiempo, las ciegas suben al siguiente nivel automáticamente.", "resaltar": ["13 minutos"] },
+      { "titulo": "Inicio", "texto": "Las ciegas arrancan en 2/4 y aumentan de forma progresiva sin límite.", "resaltar": ["2/4", "sin límite"] },
+      { "titulo": "Ante", "texto": "Se activa a partir del nivel 4 (ciegas 6/12). El valor del ante es siempre igual a la ciega chica del nivel en curso.", "resaltar": ["nivel 4", "igual a la ciega chica"] }
     ],
     "niveles": [
       { "nivel": 1, "chica": 2, "grande": 4, "ante": null },
@@ -166,21 +183,21 @@
 
   "mesa": {
     "sentarse": [
-      { "titulo": "Horario", "texto": "La partida comienza a las 21:30 hs con el nivel de ciegas que corresponda. Si hubo demora en el arranque, se inicia con las ciegas del nivel que debería estar activo según el horario real (se saltean los niveles previos)." },
-      { "titulo": "Llegadas tarde", "texto": "A los jugadores que trabajan o se demoran se los espera hasta la luz 6/12. A partir de ese nivel, se les descuentan fichas en todas las manos sin excepción." },
-      { "titulo": "Incorporación tardía", "texto": "Cuando un jugador se sienta por primera vez habiendo llegado tarde, debe poner el equivalente a la ciega grande para poder participar de inmediato. Si no quiere pagarla, debe esperar a que le toque su turno natural de ciega chica." },
-      { "titulo": "Ausencia momentánea", "texto": "Si durante una mano un jugador no está sentado cuando le toca actuar, queda automáticamente FOLD.", "destacar": "FOLD" }
+      { "titulo": "Horario", "texto": "La partida comienza a las 21:30 hs con el nivel de ciegas que corresponda. Si hubo demora en el arranque, se inicia con las ciegas del nivel que debería estar activo según el horario real (se saltean los niveles previos).", "resaltar": ["21:30 hs", "se saltean los niveles previos"] },
+      { "titulo": "Llegadas tarde", "texto": "A los jugadores que trabajan o se demoran se los espera hasta la luz 6/12. A partir de ese nivel, se les descuentan fichas en todas las manos sin excepción.", "resaltar": ["hasta la luz 6/12", "sin excepción"] },
+      { "titulo": "Incorporación tardía", "texto": "Cuando un jugador se sienta por primera vez habiendo llegado tarde, debe poner el equivalente a la ciega grande para poder participar de inmediato. Si no quiere pagarla, debe esperar a que le toque su turno natural de ciega chica.", "resaltar": ["ciega grande", "esperar a que le toque su turno"] },
+      { "titulo": "Ausencia momentánea", "texto": "Si durante una mano un jugador no está sentado cuando le toca actuar, queda automáticamente FOLD.", "destacar": "FOLD", "resaltar": ["no está sentado"] }
     ],
     "repartir": [
-      { "titulo": "Responsabilidad del repartidor", "texto": "Quien reparte es el encargado de manejar la mesa y velar por el desarrollo correcto de toda la mano." },
-      { "titulo": "Carta expuesta al repartir", "texto": "Si antes del flop se da vuelta accidentalmente una carta, esa carta queda boca arriba y se convierte en la primera carta quemada. La carta que originalmente iba a ser quemada pasa al jugador que quedó con una sola carta en mano." },
-      { "titulo": "Ciegas primero", "texto": "No se puede empezar a repartir hasta que la ciega chica y la ciega grande estén colocadas sobre la mesa." }
+      { "titulo": "Responsabilidad del repartidor", "texto": "Quien reparte es el encargado de manejar la mesa y velar por el desarrollo correcto de toda la mano.", "resaltar": ["manejar la mesa"] },
+      { "titulo": "Carta expuesta al repartir", "texto": "Si antes del flop se da vuelta accidentalmente una carta, esa carta queda boca arriba y se convierte en la primera carta quemada. La carta que originalmente iba a ser quemada pasa al jugador que quedó con una sola carta en mano.", "resaltar": ["primera carta quemada"] },
+      { "titulo": "Ciegas primero", "texto": "No se puede empezar a repartir hasta que la ciega chica y la ciega grande estén colocadas sobre la mesa.", "resaltar": ["No se puede empezar a repartir"] }
     ],
     "tiempo": [
-      { "titulo": "Límite", "texto": "Cada jugador dispone de un máximo de 45 segundos para tomar su decisión en una mano." },
-      { "titulo": "Quién controla el tiempo", "texto": "Únicamente el repartidor (quien lleva la mano) puede solicitar que se cumpla el límite de tiempo." },
-      { "titulo": "Silencio", "texto": "Durante esos 45 segundos, ningún jugador que no participe activamente de la mano puede hablar, opinar ni interrumpir al jugador que está pensando." },
-      { "titulo": "Criterio", "texto": "El repartidor aplica los tiempos con sentido común, sin presionar innecesariamente pero asegurando que el juego fluya." }
+      { "titulo": "Límite", "texto": "Cada jugador dispone de un máximo de 45 segundos para tomar su decisión en una mano.", "resaltar": ["45 segundos"] },
+      { "titulo": "Quién controla el tiempo", "texto": "Únicamente el repartidor (quien lleva la mano) puede solicitar que se cumpla el límite de tiempo.", "resaltar": ["Únicamente el repartidor"] },
+      { "titulo": "Silencio", "texto": "Durante esos 45 segundos, ningún jugador que no participe activamente de la mano puede hablar, opinar ni interrumpir al jugador que está pensando.", "resaltar": ["no participe activamente", "hablar, opinar ni interrumpir"] },
+      { "titulo": "Criterio", "texto": "El repartidor aplica los tiempos con sentido común, sin presionar innecesariamente pero asegurando que el juego fluya.", "resaltar": ["sentido común"] }
     ]
   }
 }

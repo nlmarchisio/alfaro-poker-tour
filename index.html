@@ -49,8 +49,19 @@
 
     <script>
     // Helpers
+    function highlight(text, keywords) {
+        if (!keywords || !keywords.length) return text;
+        keywords.forEach(kw => {
+            text = text.replace(kw, `<mark class="bg-green-800/40 text-green-300 px-0.5 rounded">${kw}</mark>`);
+        });
+        return text;
+    }
+
     function bullet(item) {
         let text = item.texto;
+        // First apply highlights
+        if (item.resaltar) text = highlight(text, item.resaltar);
+        // Then apply badge-style destacar (like FOLD)
         if (item.destacar) {
             text = text.replace(item.destacar, `<span class="bg-red-600 text-white font-bold px-1.5 py-0.5 rounded text-xs uppercase tracking-wide">${item.destacar}</span>`);
         }
@@ -82,7 +93,8 @@
             html += `<div class="mt-5 bg-yellow-900/20 border border-yellow-600/40 rounded-lg p-4">
                 <h3 class="font-bold text-yellow-400 mb-2 flex items-center gap-2"><span>💰</span> ${d.pago.titulo}</h3>`;
             d.pago.parrafos.forEach(p => {
-                html += `<p class="text-gray-300 text-[15px] leading-relaxed mb-2">${p}</p>`;
+                let pText = d.pago.resaltar ? highlight(p, d.pago.resaltar) : p;
+                html += `<p class="text-gray-300 text-[15px] leading-relaxed mb-2">${pText}</p>`;
             });
             html += '</div></section>';
 
@@ -100,9 +112,10 @@
             html += '<div class="space-y-2 mb-5">';
             const colors = ['bg-yellow-900/40 text-yellow-400', 'bg-gray-700 text-gray-300', 'bg-orange-900/40 text-orange-400'];
             d.premiosPorFecha.puestos.forEach((p, i) => {
+                let pText = p.resaltar ? highlight(p.texto, p.resaltar) : p.texto;
                 html += `<div class="flex items-center gap-3 bg-gray-800 border border-gray-700 rounded-lg p-3">
                     <span class="w-8 h-8 rounded-full ${colors[i]} flex items-center justify-center font-bold text-sm flex-shrink-0">${p.puesto}</span>
-                    <p class="text-[15px] text-gray-300">${p.texto}</p></div>`;
+                    <p class="text-[15px] text-gray-300">${pText}</p></div>`;
             });
             html += '</div>';
             // Castigos
@@ -110,7 +123,8 @@
                 <h3 class="font-bold text-red-400 mb-2 flex items-center gap-2"><span>🧽</span> Lavador y Ayudante (Castigo al Mamón)</h3>
                 <ul class="space-y-2 text-gray-300 text-[15px] leading-relaxed">`;
             d.premiosPorFecha.castigos.forEach(c => {
-                html += `<li class="flex gap-2"><span class="text-red-400 font-bold">•</span><span><strong class="text-white">${c.titulo}:</strong> ${c.texto}</span></li>`;
+                let cText = c.resaltar ? highlight(c.texto, c.resaltar) : c.texto;
+                html += `<li class="flex gap-2"><span class="text-red-400 font-bold">•</span><span><strong class="text-white">${c.titulo}:</strong> ${cText}</span></li>`;
             });
             html += '</ul><p class="text-gray-500 text-xs mt-3 italic">El que primero se va de la partida, último se va de la cocina. 🎰</p></div></section>';
 
@@ -140,7 +154,8 @@
             html += '</div>';
 
             html += '<h3 class="font-semibold text-gray-200 mb-2 text-sm uppercase tracking-wide">🏆 Premio al Más Mamón</h3>';
-            html += `<p class="text-gray-300 text-[15px] leading-relaxed mb-4">${d.premiosTorneo.masMamon}</p>`;
+            let mamonText = d.premiosTorneo.masMamonResaltar ? highlight(d.premiosTorneo.masMamon, d.premiosTorneo.masMamonResaltar) : d.premiosTorneo.masMamon;
+            html += `<p class="text-gray-300 text-[15px] leading-relaxed mb-4">${mamonText}</p>`;
 
             html += '<h3 class="font-semibold text-gray-200 mb-2 text-sm uppercase tracking-wide">Criterios de Desempate</h3>';
             html += '<p class="text-gray-400 text-[13px] mb-2">Cuando dos o más jugadores empatan en un puesto que otorga premio, se aplican en orden:</p>';
@@ -170,9 +185,10 @@
             html += `<p class="text-gray-300 text-[15px] mb-2 leading-relaxed">${d.master.descripcion}</p>`;
             html += '<div class="space-y-2 mb-4">';
             d.master.cupos.forEach(c => {
+                let cText = c.resaltar ? highlight(c.texto, c.resaltar) : c.texto;
                 html += `<div class="flex items-start gap-3 bg-gray-800 border border-gray-700 rounded-lg p-3">
                     <span class="w-7 h-7 rounded-full bg-green-900/50 text-green-400 flex items-center justify-center font-bold text-xs flex-shrink-0">${c.cantidad}</span>
-                    <p class="text-[15px] text-gray-300">${c.texto}</p></div>`;
+                    <p class="text-[15px] text-gray-300">${cText}</p></div>`;
             });
             html += '</div></section>';
 
