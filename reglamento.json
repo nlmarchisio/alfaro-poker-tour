@@ -17,8 +17,8 @@
     },
     {
       "titulo": "Luces a jugadores ausentes",
-      "texto": "Si la partida ya comenzó y un jugador todavía no llegó al lugar de juego, antes de la luz 6/12 solo se le descuentan fichas en su turno de ciega. A partir de la luz 6/12 se le descuentan ciegas y ante en todas las manos sin excepción. Además, si la partida comenzó en horario (21:30 hs), a partir de las 22:00 hs se le descontará el valor de la ciega grande en todas las rondas al jugador que no esté presente, independientemente del nivel de ciegas en curso.",
-      "resaltar": ["antes de la luz 6/12", "A partir de la luz 6/12", "en todas las manos sin excepción", "a partir de las 22:00 hs", "ciega grande en todas las rondas"]
+      "texto": "Si la partida ya comenzó y un jugador todavía no llegó al lugar de juego, antes de las 22:00 hs solo se le descuentan fichas en su turno de ciega. A partir de las 22:00 hs se le descontará el valor de la ciega grande en todas las manos sin excepción, independientemente del nivel de ciegas en curso.",
+      "resaltar": ["antes de las 22:00 hs", "A partir de las 22:00 hs", "en todas las manos sin excepción", "ciega grande"]
     },
     {
       "titulo": "Ante",
