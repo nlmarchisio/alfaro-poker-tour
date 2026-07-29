@@ -26,6 +26,11 @@
       "resaltar": ["ante equivalente al valor de la ciega chica", "12 (ciega) + 6 (ante) = 18 fichas", "mesa final"]
     },
     {
+      "titulo": "Pocas fichas (All-in forzado)",
+      "texto": "Si un jugador tiene pocas fichas y solo le alcanza para cubrir el ante (o ni siquiera eso), juega por todas sus fichas restantes quedando automáticamente all-in. No es necesario tener el valor completo de la ciega grande ni del ante total para sentarse o participar en una mano: el jugador pone lo que le queda en su poder y compite por el pozo proporcional.",
+      "resaltar": ["todas sus fichas restantes", "all-in", "pone lo que le queda"]
+    },
+    {
       "titulo": "Puntos",
       "texto": "Solo suman puntos para el campeonato las partidas disputadas los días lunes. La cantidad máxima de puntos disponibles cada noche la determina la cantidad de jugadores presentes en esa fecha.",
       "resaltar": ["los días lunes", "jugadores presentes"]
