@@ -189,7 +189,7 @@
   "mesa": {
     "sentarse": [
       { "titulo": "Horario", "texto": "La partida comienza a las 21:30 hs con el nivel de ciegas que corresponda. Si hubo demora en el arranque, se inicia con las ciegas del nivel que debería estar activo según el horario real (se saltean los niveles previos).", "resaltar": ["21:30 hs", "se saltean los niveles previos"] },
-      { "titulo": "Llegadas tarde", "texto": "A los jugadores que trabajan o se demoran se los espera hasta la luz 6/12. A partir de ese nivel, se les descuentan fichas en todas las manos sin excepción.", "resaltar": ["hasta la luz 6/12", "sin excepción"] },
+      { "titulo": "Llegadas tarde", "texto": "Si la partida ya comenzó y un jugador todavía no llegó, antes de las 22:00 hs solo se le descuentan fichas en su turno de ciega. A partir de las 22:00 hs se le descontará el valor de la ciega grande en todas las manos sin excepción, independientemente del nivel de ciegas en curso.", "resaltar": ["antes de las 22:00 hs", "A partir de las 22:00 hs", "en todas las manos sin excepción", "ciega grande"] },
       { "titulo": "Incorporación tardía", "texto": "Cuando un jugador se sienta por primera vez habiendo llegado tarde, debe poner el equivalente a la ciega grande para poder participar de inmediato. Si no quiere pagarla, debe esperar a que le toque su turno natural de ciega chica.", "resaltar": ["ciega grande", "esperar a que le toque su turno"] },
       { "titulo": "Ausencia momentánea", "texto": "Si durante una mano un jugador no está sentado cuando le toca actuar, queda automáticamente FOLD.", "destacar": "FOLD", "resaltar": ["no está sentado"] }
     ],
