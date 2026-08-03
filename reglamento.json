@@ -93,7 +93,7 @@
     "puestos": [
       { "puesto": "1°", "texto": "Ganador de la fecha: se lleva el 70% del pozo de la noche.", "resaltar": ["70%"] },
       { "puesto": "2°", "texto": "Segundo puesto: se lleva el 30% del pozo de la noche.", "resaltar": ["30%"] },
-      { "puesto": "3°", "texto": "Tercer puesto: recibe un premio fijo de $12.000 (recupera su entrada).", "resaltar": ["$12.000"] }
+      { "puesto": "3°", "texto": "Tercer puesto: recibe un premio fijo de $24.000 (recupera su entrada).", "resaltar": ["$24.000"] }
     ],
     "castigos": [
       {
