@@ -42,8 +42,8 @@
     },
     {
       "titulo": "Definición de puestos",
-      "texto": "Siempre se debe determinar el orden de eliminación de cada jugador y un ganador final. Si los últimos dos jugadores quedan mano a mano, pueden resolver el primer puesto jugando al mejor de 3 manos.",
-      "resaltar": ["orden de eliminación", "mejor de 3 manos"]
+      "texto": "Siempre se debe determinar el orden de eliminación de cada jugador y un ganador final.",
+      "resaltar": ["orden de eliminación", "ganador final"]
     },
     {
       "titulo": "Ausencias",
