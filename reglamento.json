@@ -125,7 +125,7 @@
       { "puesto": "2°", "porcentaje": 30 },
       { "puesto": "3°", "porcentaje": 20 }
     ],
-    "masMamon": "Se otorga al jugador que más veces haya terminado en primer puesto durante las partidas regulares de los lunes dentro del torneo. En caso de empate, se desempata comparando el promedio general de puntos.",
+    "masMamon": "Se otorga al jugador que acumule la mayor cantidad de eliminaciones en primer lugar durante las partidas regulares de los lunes del torneo. En caso de empate, se desempata comparando el promedio general de puntos.",
     "masMamonResaltar": ["primer puesto", "promedio general de puntos"],
     "desempate": [
       "Mayor cantidad de primeros puestos obtenidos los lunes.",
